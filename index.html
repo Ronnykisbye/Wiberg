@@ -90,16 +90,13 @@
         <p class="section-label">Før / efter</p>
         <h2>Fra rodet have til flot resultat</h2>
         <p>
-          Et tydeligt før/efter billede giver kunden tillid og viser straks,
-          hvad arbejdet kan gøre.
+          Billedet viser forskellen tydeligt: fra en have der trænger til hjælp,
+          til et pænt og indbydende resultat.
         </p>
       </div>
 
       <div class="before-frame">
         <img src="assets/images/beforeafter.jpg" alt="Før og efter havearbejde" />
-        <div class="before-line"></div>
-        <div class="before-badge left">FØR</div>
-        <div class="before-badge right">EFTER</div>
       </div>
     </section>
 
@@ -116,12 +113,12 @@
         <h2>Få et tilbud på din opgave</h2>
         <p>Beskriv kort hvad du skal have hjælp til.</p>
 
-        <form class="contact-form">
-          <input type="text" placeholder="Dit navn" required />
-          <input type="tel" placeholder="Telefonnummer" required />
-          <input type="email" placeholder="Email" />
+        <form class="contact-form" id="contactForm">
+          <input id="contactName" type="text" placeholder="Dit navn" required />
+          <input id="contactPhone" type="tel" placeholder="Telefonnummer" required />
+          <input id="contactEmail" type="email" placeholder="Email" />
 
-          <select required>
+          <select id="contactTask" required>
             <option value="">Vælg opgave</option>
             <option>Græsslåning</option>
             <option>Hækklipning</option>
@@ -131,9 +128,9 @@
             <option>Andet</option>
           </select>
 
-          <textarea placeholder="Beskriv opgaven" required></textarea>
+          <textarea id="contactMessage" placeholder="Beskriv opgaven" required></textarea>
 
-          <button type="submit" class="btn primary">Send forespørgsel</button>
+          <button type="submit" class="btn primary">Send forespørgsel til Lars</button>
         </form>
       </div>
     </section>
@@ -144,9 +141,12 @@
 
   <div class="chat-box" id="chatBox">
     <div class="chat-header">Lars Wiberg</div>
+
     <div class="chat-body" id="chatBody">
       <p><strong>Lars:</strong> Hej 👋 Hvad skal du have hjælp til?</p>
+      <p class="chat-hint">Skriv fx: “Jeg skal have klippet hæk” eller “Jeg skal have kørt affald væk”.</p>
     </div>
+
     <div class="chat-input">
       <input id="chatInput" type="text" placeholder="Skriv her..." />
       <button id="sendChat">Send</button>
