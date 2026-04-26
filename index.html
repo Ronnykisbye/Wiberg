@@ -1,158 +1,139 @@
 <!DOCTYPE html>
+
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lars Wiberg | Total Service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lars Wiberg | Total Service</title>
 
-  <link rel="stylesheet" href="css/colors.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+<style>
+
+body {
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+/* HERO */
+.hero {
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('assets/images/beforeafter.jpg');
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.section {
+    padding:60px;
+    text-align:center;
+}
+
+/* CARDS */
+.services {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card {
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* BEFORE AFTER */
+.ba-container {
+    position:relative;
+    width:80%;
+    max-width:800px;
+    margin:50px auto;
+}
+
+.ba-container img {
+    width:100%;
+    border-radius:10px;
+}
+
+.ba-line {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:4px;
+    background:white;
+}
+
+/* LABELS */
+.label {
+    position:absolute;
+    top:10px;
+    padding:5px 10px;
+    color:white;
+    font-weight:bold;
+}
+
+.before {
+    left:10px;
+    background:gray;
+}
+
+.after {
+    right:10px;
+    background:green;
+}
+
+</style>
+
 </head>
 
 <body>
 
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Lars Wiberg</h1>
-      <p>Skiltearbejde • Haveopgaver • Fliser • Oprydning</p>
-      <a href="#kontakt" class="btn">Få et tilbud</a>
-    </div>
-  </header>
+<section class="hero">
+<div>
+<h1>Lars Wiberg</h1>
+<p>Skilte • Have • Fliser • Oprydning</p>
+</div>
+</section>
 
-  <main>
+<section class="section">
 
-    <section class="section">
-      <h2>Hvad kan Lars hjælpe med?</h2>
+<h2>Vores Services</h2>
 
-      <div class="service-grid">
+<div class="services">
 
-        <article class="service-card">
-          <img src="assets/images/grass.jpg" alt="Græsslåning">
-          <h3>Græsslåning</h3>
-          <p>Fast eller enkelt græsslåning, så haven altid ser pæn ud.</p>
-        </article>
+<div class="card">Græsslåning</div>
+<div class="card">Hækklipning</div>
+<div class="card">Flisearbejde</div>
+<div class="card">Affald</div>
+<div class="card">Skilte & Print</div>
 
-        <article class="service-card">
-          <img src="assets/images/hedge.jpg" alt="Hækklipning">
-          <h3>Hækklipning</h3>
-          <p>Professionel klipning af hække og buske.</p>
-        </article>
+</div>
 
-        <article class="service-card">
-          <img src="assets/images/paving.jpg" alt="Flisearbejde">
-          <h3>Flisearbejde</h3>
-          <p>Fliser, gangstier, terrasser og mindre belægningsopgaver.</p>
-        </article>
+</section>
 
-        <article class="service-card">
-          <img src="assets/images/cleanup.jpg" alt="Bortkørsel af affald">
-          <h3>Oprydning & affald</h3>
-          <p>Bortkørsel af haveaffald, byggeaffald og almindelig oprydning.</p>
-        </article>
+<section class="section">
 
-        <article class="service-card">
-          <img src="assets/images/sign.jpg" alt="Skilte og print">
-          <h3>Skilte & print</h3>
-          <p>Skilte, print, folier og grafisk arbejde til private og erhverv.</p>
-        </article>
+<h2>Før og efter</h2>
 
-      </div>
-    </section>
+<div class="ba-container">
 
-    <section class="section before-section">
-      <h2>Før og efter</h2>
-      <p class="section-text">Træk i midten og se forskellen.</p>
+<img src="assets/images/beforeafter.jpg">
 
-      <div class="before-after" id="beforeAfter">
-        <img src="assets/images/before.jpg" alt="Før billede">
+<div class="ba-line"></div>
 
-        <div class="after-image" id="afterImage">
-          <img src="assets/images/after.jpg" alt="Efter billede">
-        </div>
+<div class="label before">FØR</div>
+<div class="label after">EFTER</div>
 
-        <div class="slider-line" id="sliderLine">
-          <span>↔</span>
-        </div>
-      </div>
-    </section>
+</div>
 
-    <section id="kontakt" class="section contact-section">
-      <h2>Kontakt Lars</h2>
-      <p class="section-text">Beskriv opgaven, så vender Lars tilbage med et tilbud.</p>
-
-      <form class="contact-form">
-        <input type="text" placeholder="Dit navn" required>
-        <input type="email" placeholder="Din email" required>
-        <input type="tel" placeholder="Telefonnummer">
-        <select required>
-          <option value="">Vælg opgave</option>
-          <option>Græsslåning</option>
-          <option>Hækklipning</option>
-          <option>Flisearbejde</option>
-          <option>Oprydning / affald</option>
-          <option>Skilte & print</option>
-          <option>Andet</option>
-        </select>
-        <textarea placeholder="Beskriv opgaven" required></textarea>
-        <button type="submit" class="btn">Send forespørgsel</button>
-      </form>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Lars Wiberg | Total Service</p>
-  </footer>
-
-  <script>
-    const beforeAfter = document.getElementById("beforeAfter");
-    const afterImage = document.getElementById("afterImage");
-    const sliderLine = document.getElementById("sliderLine");
-
-    let isDragging = false;
-
-    function moveSlider(clientX) {
-      const rect = beforeAfter.getBoundingClientRect();
-      let x = clientX - rect.left;
-
-      if (x < 0) x = 0;
-      if (x > rect.width) x = rect.width;
-
-      const percent = (x / rect.width) * 100;
-
-      afterImage.style.width = percent + "%";
-      sliderLine.style.left = percent + "%";
-    }
-
-    sliderLine.addEventListener("mousedown", () => {
-      isDragging = true;
-    });
-
-    window.addEventListener("mouseup", () => {
-      isDragging = false;
-    });
-
-    window.addEventListener("mousemove", (e) => {
-      if (isDragging) {
-        moveSlider(e.clientX);
-      }
-    });
-
-    sliderLine.addEventListener("touchstart", () => {
-      isDragging = true;
-    });
-
-    window.addEventListener("touchend", () => {
-      isDragging = false;
-    });
-
-    window.addEventListener("touchmove", (e) => {
-      if (isDragging) {
-        moveSlider(e.touches[0].clientX);
-      }
-    });
-  </script>
+</section>
 
 </body>
 </html>
