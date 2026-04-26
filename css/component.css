@@ -236,34 +236,6 @@
   display: block;
 }
 
-.before-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 5px;
-  background: white;
-}
-
-.before-badge {
-  position: absolute;
-  top: 22px;
-  padding: 12px 20px;
-  border-radius: 10px;
-  color: white;
-  font-weight: 900;
-}
-
-.before-badge.left {
-  left: 22px;
-  background: rgba(0,0,0,0.7);
-}
-
-.before-badge.right {
-  right: 22px;
-  background: var(--green);
-}
-
 .trust-bar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -337,7 +309,8 @@
   position: fixed;
   right: 25px;
   bottom: 105px;
-  width: 330px;
+  width: 360px;
+  max-width: calc(100vw - 40px);
   background: white;
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -355,8 +328,29 @@
 
 .chat-body {
   padding: 16px;
-  max-height: 260px;
+  max-height: 320px;
   overflow-y: auto;
+}
+
+.chat-body p {
+  margin: 0 0 12px;
+  line-height: 1.35;
+}
+
+.chat-hint {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.chat-action {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--green);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 800;
 }
 
 .chat-input {
