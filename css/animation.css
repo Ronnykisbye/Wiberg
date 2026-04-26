@@ -1,6 +1,0 @@
-.reveal { opacity: 0; transform: translateY(24px); animation: reveal .8s ease forwards; }
-.delay-1 { animation-delay: .16s; }
-.delay-2 { animation-delay: .32s; }
-@keyframes reveal { to { opacity: 1; transform: translateY(0); } }
-.hero-bg { animation: heroZoom 14s ease-in-out infinite alternate; }
-@keyframes heroZoom { from { transform: scale(1.03); } to { transform: scale(1.08); } }
