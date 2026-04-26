@@ -1,131 +1,189 @@
 <!DOCTYPE html>
-
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lars Wiberg | Total Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lars Wiberg Totalservice - skilte, print, havearbejde, græsslåning, hækklipning, fliser og bortkørsel." />
+  <title>Lars Wiberg | Skilte, Have & Totalservice</title>
 
-<link rel="stylesheet" href="css/color.css">
-<link rel="stylesheet" href="css/layout.css">
-<link rel="stylesheet" href="css/component.css">
-
-<style>
-/* fallback hvis css ikke loader */
-body {
-    margin:0;
-    font-family: Arial;
-    background:#f5f5f5;
-}
-
-/* HERO fallback */
-.hero {
-    height:400px;
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1598032895397-b9472444bf93');
-    background-size:cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-align:center;
-}
-
-/* NAV fallback */
-nav {
-    background:#111;
-    padding:15px;
-    text-align:center;
-}
-
-nav a {
-    color:white;
-    margin:10px;
-    text-decoration:none;
-}
-
-/* cards */
-.services {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    padding:40px;
-}
-
-.card {
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    width:250px;
-    box-shadow:0 5px 10px rgba(0,0,0,0.2);
-}
-</style>
-
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/component.css" />
+  <link rel="stylesheet" href="css/animation.css" />
 </head>
-
 <body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Lars Wiberg forside">
+      <span class="brand-mark">LW</span>
+      <span>
+        <strong>Lars Wiberg</strong>
+        <small>Skilte · Have · Fliser</small>
+      </span>
+    </a>
 
-<nav>
-<a href="#">Forside</a>
-<a href="#services">Services</a>
-<a href="#kontakt">Kontakt</a>
-</nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Åbn menu">☰</button>
 
-<section class="hero">
-<div>
-<h1>Lars Wiberg</h1>
-<p>Skilte • Have • Fliser • Oprydning</p>
-</div>
-</section>
+    <nav class="main-nav" id="mainNav">
+      <a href="#services">Services</a>
+      <a href="#gallery">Før/efter</a>
+      <a href="#process">Proces</a>
+      <a href="#contact" class="nav-cta">Få tilbud</a>
+    </nav>
+  </header>
 
-<section id="services">
-<h2 style="text-align:center;">Vores Services</h2>
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-bg"></div>
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
 
-<div class="services">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Totalservice i Nordsjælland</p>
+        <h1>Skilte, print og praktisk arbejde – samlet ét sted.</h1>
+        <p class="hero-text">
+          Fra skarpe firmaskilte til pæne haver, hække, fliser og oprydning. En fleksibel løsning for private og virksomheder, der vil have tingene gjort ordentligt.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Beskriv din opgave</a>
+          <a class="btn btn-ghost" href="#services">Se hvad Lars laver</a>
+        </div>
+        <div class="trust-row" aria-label="Fordele">
+          <span>✓ Hurtig kontakt</span>
+          <span>✓ Praktisk erfaring</span>
+          <span>✓ Små og store opgaver</span>
+        </div>
+      </div>
 
-<div class="card">
-<h3>Skilte & Print</h3>
-<p>Professionelle skilte og print</p>
-</div>
+      <aside class="hero-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85" alt="Professionelt håndværk og værktøj" />
+        <div class="hero-card-content">
+          <span class="status-dot"></span>
+          <strong>Klar til opgaver</strong>
+          <p>Skilte · græs · hæk · fliser · affald</p>
+        </div>
+      </aside>
+    </section>
 
-<div class="card">
-<h3>Græsslåning</h3>
-<p>Flot og velholdt græs</p>
-</div>
+    <section class="intro section-light">
+      <div class="container intro-grid">
+        <div class="reveal">
+          <p class="eyebrow dark">Professionelt, jordnært og fleksibelt</p>
+          <h2>En side der sælger tillid – ikke bare pæne billeder.</h2>
+        </div>
+        <p class="intro-copy reveal delay-1">
+          Designet er bygget i en moderne nordisk stil: rolige naturfarver, mørk premium kontrast, store billeder og tydelige kontaktveje. Fokus er at få kunden til hurtigt at forstå: “Lars kan hjælpe mig”.
+        </p>
+      </div>
+    </section>
 
-<div class="card">
-<h3>Hækklipning</h3>
-<p>Vi klipper din hæk perfekt</p>
-</div>
+    <section class="services section-light" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark">Ydelser</p>
+          <h2>Alt det praktiske – samlet i én løsning.</h2>
+        </div>
 
-<div class="card">
-<h3>Flisearbejde</h3>
-<p>Terrasser og indkørsler</p>
-</div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=85" alt="Skilte og print arbejde" />
+            <div><h3>Skilte & print</h3><p>Firmaskilte, folie, tryksager, bannere og synlig branding til virksomheder.</p></div>
+          </article>
 
-<div class="card">
-<h3>Affald</h3>
-<p>Bortkørsel og oprydning</p>
-</div>
+          <article class="service-card reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1592420114271-625ed4339e27?auto=format&fit=crop&w=900&q=85" alt="Græsslåning og havearbejde" />
+            <div><h3>Græsslåning</h3><p>Fast pasning eller enkeltopgaver – så græsset står pænt uden besvær.</p></div>
+          </article>
 
-</div>
-</section>
+          <article class="service-card reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1624377632657-3902bfd35958?auto=format&fit=crop&w=900&q=85" alt="Klipning af hæk" />
+            <div><h3>Hækklipning</h3><p>Pæne linjer, oprydning efter klip og en have der ser velholdt ud.</p></div>
+          </article>
 
-<section id="kontakt" style="text-align:center; padding:40px;">
-<h2>Kontakt</h2>
+          <article class="service-card reveal">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Fliser ved hus og terrasse" />
+            <div><h3>Flisearbejde</h3><p>Små terrasser, gangarealer, reparationer og praktiske forbedringer.</p></div>
+          </article>
 
-<input placeholder="Navn"><br><br> <input placeholder="Email"><br><br>
+          <article class="service-card reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=900&q=85" alt="Oprydning og bortkørsel" />
+            <div><h3>Bortkørsel</h3><p>Affald, haveaffald og oprydning efter projekter – hurtigt og effektivt.</p></div>
+          </article>
 
-<textarea placeholder="Beskrivelse"></textarea><br><br>
+          <article class="service-card service-highlight reveal delay-2">
+            <div><h3>Har du en anden opgave?</h3><p>Beskriv den kort – så vender Lars tilbage med en realistisk vurdering.</p><a class="text-link" href="#contact">Send forespørgsel →</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<button style="padding:10px 20px; background:green; color:white;">Send</button>
+    <section class="gallery section-dark" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Visuel troværdighed</p>
+          <h2>Billeder der matcher arbejdet – ikke skjorter og slips.</h2>
+        </div>
 
-</section>
+        <div class="gallery-grid reveal delay-1">
+          <figure class="wide"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1400&q=85" alt="Havearbejde med grønne planter" /><figcaption>Havearbejde</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=900&q=85" alt="Praktisk håndværk med maling og værktøj" /><figcaption>Praktisk finish</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=85" alt="Byggeplads og flisearbejde" /><figcaption>Fliser og anlæg</figcaption></figure>
+        </div>
+      </div>
+    </section>
 
-<script>
-console.log("Side virker 👍");
-</script>
+    <section class="process section-light" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark">Sådan fungerer det</p>
+          <h2>Fra idé til færdig opgave.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><h3>Beskriv opgaven</h3><p>Fortæl hvad der skal laves, og upload gerne billeder senere.</p></div>
+          <div class="step reveal delay-1"><span>02</span><h3>Få vurdering</h3><p>Lars vurderer opgaven og vender tilbage med forslag eller pris.</p></div>
+          <div class="step reveal delay-2"><span>03</span><h3>Opgaven udføres</h3><p>Praktisk, pænt og med fokus på det kunden faktisk har brug for.</p></div>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact section-dark" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Få et hurtigt bud på din opgave.</h2>
+          <p>Udfyld formularen, så er siden klar til senere at blive koblet på mail, database eller en rigtig AI-chatbot.</p>
+          <div class="contact-mini-cards">
+            <span>📍 Nordsjælland</span>
+            <span>🛠️ Skilte + praktiske opgaver</span>
+            <span>💬 Chat-demo inkluderet</span>
+          </div>
+        </div>
+
+        <form class="lead-form reveal delay-1" id="leadForm">
+          <label>Navn<input id="name" name="name" type="text" placeholder="Dit navn" required></label>
+          <label>Email<input id="email" name="email" type="email" placeholder="din@email.dk" required></label>
+          <label>Opgavetype<select id="service" name="service"><option>Skilte & print</option><option>Græsslåning</option><option>Hækklipning</option><option>Flisearbejde</option><option>Bortkørsel</option><option>Andet</option></select></label>
+          <label>Beskrivelse<textarea id="message" name="message" rows="5" placeholder="Skriv kort hvad du skal have hjælp til..." required></textarea></label>
+          <button class="btn btn-primary full" type="submit">Send forespørgsel</button>
+          <p class="form-note" id="formNote">Demo: formularen viser bekræftelse på skærmen.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <button class="chat-launch" id="chatLaunch" aria-label="Åbn chat">💬</button>
+  <aside class="chat-panel" id="chatPanel" aria-label="Chat demo">
+    <div class="chat-header"><strong>Lars Wiberg Chat</strong><button id="chatClose" aria-label="Luk chat">×</button></div>
+    <div class="chat-messages" id="chatMessages"><p class="bot">Hej 👋 Hvad skal du have hjælp til – skilte, have, fliser eller oprydning?</p></div>
+    <div class="chat-input-row"><input id="chatInput" type="text" placeholder="Skriv din opgave..."><button id="chatSend">Send</button></div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2026 Lars Wiberg · Demo website bygget til GitHub Pages</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
