@@ -1,139 +1,164 @@
 <!DOCTYPE html>
-
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lars Wiberg | Total Service</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
+  <title>Lars Wiberg | Skilte • Have • Fliser • Oprydning</title>
 
-body {
-    margin:0;
-    font-family:Arial;
-    background:#f4f4f4;
-}
-
-/* HERO */
-.hero {
-    height:60vh;
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('assets/images/beforeafter.jpg');
-    background-size:cover;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    text-align:center;
-}
-
-.section {
-    padding:60px;
-    text-align:center;
-}
-
-/* CARDS */
-.services {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.card {
-    background:white;
-    padding:20px;
-    width:250px;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* BEFORE AFTER */
-.ba-container {
-    position:relative;
-    width:80%;
-    max-width:800px;
-    margin:50px auto;
-}
-
-.ba-container img {
-    width:100%;
-    border-radius:10px;
-}
-
-.ba-line {
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:50%;
-    width:4px;
-    background:white;
-}
-
-/* LABELS */
-.label {
-    position:absolute;
-    top:10px;
-    padding:5px 10px;
-    color:white;
-    font-weight:bold;
-}
-
-.before {
-    left:10px;
-    background:gray;
-}
-
-.after {
-    right:10px;
-    background:green;
-}
-
-</style>
-
+  <link rel="stylesheet" href="css/color.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/component.css" />
 </head>
 
 <body>
 
-<section class="hero">
-<div>
-<h1>Lars Wiberg</h1>
-<p>Skilte • Have • Fliser • Oprydning</p>
-</div>
-</section>
+  <header class="topbar">
+    <div class="logo">
+      <span>LARS</span> WIBERG
+    </div>
 
-<section class="section">
+    <nav class="nav">
+      <a href="#forside">Forside</a>
+      <a href="#services">Services</a>
+      <a href="#galleri">Galleri</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
 
-<h2>Vores Services</h2>
+    <a href="#kontakt" class="top-cta">Kontakt Lars</a>
+  </header>
 
-<div class="services">
+  <section id="forside" class="hero">
+    <div class="hero-overlay"></div>
 
-<div class="card">Græsslåning</div>
-<div class="card">Hækklipning</div>
-<div class="card">Flisearbejde</div>
-<div class="card">Affald</div>
-<div class="card">Skilte & Print</div>
+    <div class="hero-content">
+      <p class="eyebrow">Skilte • Have • Fliser • Oprydning</p>
+      <h1>Lars Wiberg</h1>
+      <p class="hero-text">
+        Praktisk hjælp til private og erhverv – fra hækklipning og græsslåning
+        til flisearbejde, oprydning og skiltearbejde.
+      </p>
 
-</div>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn primary">Få et uforpligtende tilbud</a>
+        <a href="#services" class="btn secondary">Se services</a>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <main>
 
-<section class="section">
+    <section id="services" class="section">
+      <p class="section-label">Vores services</p>
+      <h2>Hvad kan Lars hjælpe med?</h2>
 
-<h2>Før og efter</h2>
+      <div class="service-grid">
 
-<div class="ba-container">
+        <article class="service-card grass">
+          <div class="service-icon">🌱</div>
+          <h3>Græsslåning</h3>
+          <p>Fast eller enkelt græsslåning, så haven altid står pænt.</p>
+        </article>
 
-<img src="assets/images/beforeafter.jpg">
+        <article class="service-card hedge">
+          <div class="service-icon">✂️</div>
+          <h3>Hækklipning</h3>
+          <p>Professionel klipning af hække, buske og grønne områder.</p>
+        </article>
 
-<div class="ba-line"></div>
+        <article class="service-card paving">
+          <div class="service-icon">🧱</div>
+          <h3>Flisearbejde</h3>
+          <p>Fliser, gangstier, terrasser og mindre belægningsopgaver.</p>
+        </article>
 
-<div class="label before">FØR</div>
-<div class="label after">EFTER</div>
+        <article class="service-card cleanup">
+          <div class="service-icon">🚛</div>
+          <h3>Oprydning & affald</h3>
+          <p>Bortkørsel af haveaffald, byggeaffald og almindelig oprydning.</p>
+        </article>
 
-</div>
+        <article class="service-card sign">
+          <div class="service-icon">🪧</div>
+          <h3>Skilte & print</h3>
+          <p>Skilte, print, folie og grafisk arbejde til private og erhverv.</p>
+        </article>
 
-</section>
+      </div>
+    </section>
 
+    <section id="galleri" class="before-section">
+      <div class="before-text">
+        <p class="section-label">Før / efter</p>
+        <h2>Fra rodet have til flot resultat</h2>
+        <p>
+          Et tydeligt før/efter billede giver kunden tillid og viser straks,
+          hvad arbejdet kan gøre.
+        </p>
+      </div>
+
+      <div class="before-frame">
+        <img src="assets/images/beforeafter.jpg" alt="Før og efter havearbejde" />
+        <div class="before-line"></div>
+        <div class="before-badge left">FØR</div>
+        <div class="before-badge right">EFTER</div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div>🍃 Kvalitetsarbejde</div>
+      <div>🤝 Pålidelig og ærlig</div>
+      <div>⏱️ Til tiden – hver gang</div>
+      <div>📍 Lokalt arbejde</div>
+    </section>
+
+    <section id="kontakt" class="contact-section">
+      <div class="contact-box">
+        <p class="section-label">Kontakt</p>
+        <h2>Få et tilbud på din opgave</h2>
+        <p>Beskriv kort hvad du skal have hjælp til.</p>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Dit navn" required />
+          <input type="tel" placeholder="Telefonnummer" required />
+          <input type="email" placeholder="Email" />
+
+          <select required>
+            <option value="">Vælg opgave</option>
+            <option>Græsslåning</option>
+            <option>Hækklipning</option>
+            <option>Flisearbejde</option>
+            <option>Oprydning / affald</option>
+            <option>Skilte & print</option>
+            <option>Andet</option>
+          </select>
+
+          <textarea placeholder="Beskriv opgaven" required></textarea>
+
+          <button type="submit" class="btn primary">Send forespørgsel</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <button class="chat-button" id="chatButton">💬</button>
+
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Lars Wiberg</div>
+    <div class="chat-body" id="chatBody">
+      <p><strong>Lars:</strong> Hej 👋 Hvad skal du have hjælp til?</p>
+    </div>
+    <div class="chat-input">
+      <input id="chatInput" type="text" placeholder="Skriv her..." />
+      <button id="sendChat">Send</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Lars Wiberg</p>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
