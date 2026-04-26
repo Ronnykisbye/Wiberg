@@ -1,1 +1,131 @@
+<!DOCTYPE html>
 
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lars Wiberg | Total Service</title>
+
+<link rel="stylesheet" href="css/color.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/component.css">
+
+<style>
+/* fallback hvis css ikke loader */
+body {
+    margin:0;
+    font-family: Arial;
+    background:#f5f5f5;
+}
+
+/* HERO fallback */
+.hero {
+    height:400px;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1598032895397-b9472444bf93');
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+/* NAV fallback */
+nav {
+    background:#111;
+    padding:15px;
+    text-align:center;
+}
+
+nav a {
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+/* cards */
+.services {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.card {
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#">Forside</a>
+<a href="#services">Services</a>
+<a href="#kontakt">Kontakt</a>
+</nav>
+
+<section class="hero">
+<div>
+<h1>Lars Wiberg</h1>
+<p>Skilte • Have • Fliser • Oprydning</p>
+</div>
+</section>
+
+<section id="services">
+<h2 style="text-align:center;">Vores Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Skilte & Print</h3>
+<p>Professionelle skilte og print</p>
+</div>
+
+<div class="card">
+<h3>Græsslåning</h3>
+<p>Flot og velholdt græs</p>
+</div>
+
+<div class="card">
+<h3>Hækklipning</h3>
+<p>Vi klipper din hæk perfekt</p>
+</div>
+
+<div class="card">
+<h3>Flisearbejde</h3>
+<p>Terrasser og indkørsler</p>
+</div>
+
+<div class="card">
+<h3>Affald</h3>
+<p>Bortkørsel og oprydning</p>
+</div>
+
+</div>
+</section>
+
+<section id="kontakt" style="text-align:center; padding:40px;">
+<h2>Kontakt</h2>
+
+<input placeholder="Navn"><br><br> <input placeholder="Email"><br><br>
+
+<textarea placeholder="Beskrivelse"></textarea><br><br>
+
+<button style="padding:10px 20px; background:green; color:white;">Send</button>
+
+</section>
+
+<script>
+console.log("Side virker 👍");
+</script>
+
+</body>
+</html>
